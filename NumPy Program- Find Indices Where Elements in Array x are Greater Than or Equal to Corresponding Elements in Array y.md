@@ -13,9 +13,27 @@ To write a Python program using **NumPy** that finds the indices where elements 
 5. **Print Indices**: Print the indices where the condition holds true.
 
 ## 🧾 Program
+```
+import numpy as np
 
-Add code here
+arr = np.array([[1, 2, 3],
+                [4, 5, 6],
+                [7, 8, 9]])
+
+new_col = np.array([10, 11, 12])
+
+arr = np.delete(arr, 1, axis=1)
+arr = np.insert(arr, 1, new_col, axis=1)
+
+print("Updated Array:")
+print(arr)
+```
+
 
 ## Output
 
+![alt text](<Screenshot 2025-10-20 153843 - Copy.png>)
+
+
 ## Result
+The NumPy program successfully deletes the second column from a given 2D array and inserts a new column at the same position.
